@@ -8,4 +8,10 @@ Cuando a un jugador le sale el disparo se informa que el jugador ha perdido y el
 
 Para jugar de nuevo se debe iniciar nuevamente el programa.
 
+
+Ejemplo:
+
+![Image text](https://github.com/Franco940/RuletaRusa/blob/master/ruleta-rusaEjemplo.png)
+
+
 Hecho en NetBeans
