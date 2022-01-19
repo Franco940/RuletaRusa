@@ -7,3 +7,5 @@ Luego automáticamente se carga la "bala" de agua en el tambor y se "gira" para 
 Cuando a un jugador le sale el disparo se informa que el jugador ha perdido y el juego finaliza.
 
 Para jugar de nuevo se debe iniciar nuevamente el programa.
+
+Hecho en NetBeans
