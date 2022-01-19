@@ -17,11 +17,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("¡Bienvenido a la Ruleta Rusa que se juega con una pistola de agua!");
         ServicioJuego servicioJuego = new ServicioJuego();
         Juego juego = servicioJuego.crearJuego();
         
         try {
-            juego.inicio();
+            servicioJuego.inicio(juego);
+            
         } catch (InterruptedException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }

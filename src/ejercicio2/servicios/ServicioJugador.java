@@ -6,11 +6,13 @@
 package ejercicio2.servicios;
 
 import ejercicio2.entidades.Jugador;
+import ejercicio2.entidades.Revolver;
 import java.util.Scanner;
 
 public class ServicioJugador {
     
     private Scanner input = new Scanner(System.in);
+    private ServicioRevolver servicioRevolver = new ServicioRevolver();
     
     
     public Jugador crearJugador(int id){
@@ -26,5 +28,11 @@ public class ServicioJugador {
         jugador.setId(id);
         
         return jugador;
+    }
+    
+    public void disparo(Jugador jugador, Revolver r){
+        if(servicioRevolver.mojar(r)){
+            jugador.setMojado(true);
+        }
     }
 }

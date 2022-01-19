@@ -31,37 +31,13 @@ public class Revolver {
         this.lugarBala = lugarBala;
     }
 
+    public int getTamanioTambor() {
+        return tamanioTambor;
+    }
+    
     @Override
     public String toString() {
         return "Revolver{" + "posicionTambor=" + posicionTambor + ", lugarBala=" + lugarBala + '}';
-    }
-    
-    public void llenarRevolver(){
-        System.out.println("### Cargando revolver... ###");
-        this.lugarBala = (int) (Math.random() * 6 + 1);
-        
-        System.out.println("### Girando tambor... ###");
-        
-        this.posicionTambor = (int) (Math.random() * 6 + 1);
-        System.out.println("### Revolver preparado ###");
-    }
-    
-    public boolean mojar(){
-        if(this.lugarBala == this.posicionTambor){
-            System.out.println("### DISPARO EFECTUADO ###");
-            return true;
-        }else{
-            System.out.println("### NO SALE NADA, SE HA SALVADO ###");
-            return false;
-        }
-    }
-    
-    public void siguienteDisparo(){
-        if(this.posicionTambor == this.tamanioTambor){
-            this.posicionTambor = 1;
-        }else{
-            this.posicionTambor++;
-        }
     }
     
 }

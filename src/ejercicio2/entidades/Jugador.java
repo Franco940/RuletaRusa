@@ -48,10 +48,4 @@ public class Jugador {
         return "Jugador{" + "id=" + id + ", nombre=" + nombre + ", mojado=" + mojado + '}';
     }
     
-    public void disparo(Revolver r){
-        if(r.mojar()){
-            this.mojado = true;  
-        }
-    }
-    
 }
