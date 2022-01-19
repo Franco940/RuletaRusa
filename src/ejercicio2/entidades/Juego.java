@@ -16,7 +16,7 @@ public class Juego {
         
     }
     
-    public void llenarJuego(List<Jugador> jugadores, Revolver revolver){
+    public Juego(List<Jugador> jugadores, Revolver revolver){
         this.jugadores = jugadores;
         this.revolver = revolver;
     }

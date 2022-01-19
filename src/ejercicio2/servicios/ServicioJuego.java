@@ -20,7 +20,7 @@ public class ServicioJuego {
     private ServicioRevolver servicioRevolver = new ServicioRevolver();
     
     public Juego crearJuego(){
-        Juego juego = new Juego();
+        Juego juego;
         Revolver r = new Revolver();
         int cantJugadores;
         
@@ -40,7 +40,7 @@ public class ServicioJuego {
         
         servicioRevolver.llenarRevolver(r);
         
-        juego.llenarJuego(listAux, r);
+        juego = new Juego(listAux, r);
         
         return juego;
     }
